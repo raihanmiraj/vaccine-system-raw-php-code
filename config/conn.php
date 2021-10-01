@@ -13,5 +13,5 @@ if(mysqli_error($conn)){
     echo mysqli_error($conn);
 
 }
-$base_url = 'http://localhost/vaccine';
+$base_url = '';
 ?>
