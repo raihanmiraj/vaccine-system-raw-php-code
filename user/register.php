@@ -1,8 +1,6 @@
 <?php require '../config/conn.php'; ?>
  <?php include '../includes/header.php'; 
- 
 
- 
  if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 $name = $_POST['name'];
@@ -32,6 +30,7 @@ $days_ago = date('Y/m/d', strtotime('+10 days', strtotime($datevaccineregister))
 $insertRegister = "  INSERT INTO `registered_person`( `nid`, `Status`, `Vaccination_Date`,  `vaccine_reg_id`) VALUES ( '".$nid."', '".$status."', '".$days_ago."', '".$mysqli_inserted_id."')";
 
 if(mysqli_query($conn, $insertRegister)){
+  session_start();
   $_SESSION['id'] = $mysqli_inserted_id;
   $_SESSION['nid'] = $nid;
 
@@ -57,6 +56,14 @@ if(mysqli_query($conn, $insertRegister)){
       
             <div class="modal-body p-5 pt-0">
             <form class="row g-3 needs-validation" action="" method="POST" novalidate>
+            <?php 
+if(isset($_GET['error'])){
+ ?>
+  <div class="alert alert-danger" role="alert">
+<?php echo $_GET['error']; ?>
+</div>
+<?php
+    } ?>    
   <div class="col-md-6">
   <div class="form-floating mb-3">
                   <input type="text" class="form-control rounded-4" name="name" id="name" placeholder="Your Name" required>

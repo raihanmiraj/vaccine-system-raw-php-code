@@ -23,7 +23,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content rounded-6 shadow">
         <div class="  p-5 " >
-          <h2 class="fw-bold mb-0 text-center">Administration Mode</h2>
+          <h2 class="fw-bold mb-0 text-center">Nurse Mode</h2>
   
           <ul class="d-grid gap-4 my-5 list-unstyled">
             <li class=" btn btn-primary" style="height:70px;padding-top: 20px;" >

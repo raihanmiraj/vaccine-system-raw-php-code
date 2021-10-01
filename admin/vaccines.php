@@ -7,7 +7,7 @@ include '../includes/header.php';
 ?>
 
 <header class="d-flex justify-content-center py-3 bg-secondary">
-        <h1 style="color:white">Vaccine Registration Info</h1>
+        <h1 style="color:white">Vaccine Info</h1>
         </header>
 
 

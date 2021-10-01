@@ -5,7 +5,7 @@ if(isset($_GET['getcities'])){
     $getdetails = "SELECT * FROM cities ";
     $results = mysqli_query($conn, $getdetails);
   $all = mysqli_fetch_all($results,$resulttype = MYSQLI_ASSOC);
-     echo  json_encode($all);
+     echo json_encode($all);
 
 }else if(isset($_GET['gethospitalbycity'])){
     $id = $_GET['gethospitalbycity'];

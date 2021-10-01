@@ -130,7 +130,7 @@ if(isset($_GET['message'])){
 
 
 
-    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Provide</button>
+    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Add Booth</button>
     <a class="w-100 mb-2 btn btn-lg rounded-4 btn-success" href="index.php"  >Back To Add Item</a>
                 </form>
             </div>

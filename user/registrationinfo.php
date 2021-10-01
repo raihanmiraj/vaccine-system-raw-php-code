@@ -52,7 +52,7 @@ $booth_no = $results['booth_no'];
             <div class="col-md-6">
             <li class=" alert alert-primary" style="height:70px;padding-top: 20px;" >
        
-                <h5 class="text-center">Reg ID: <?php echo $booth_no; ?></h5> 
+                <h5 class="text-center">Reg ID: <?php echo $id; ?></h5> 
            </li>
             </div>
             <div class="col-md-6">
